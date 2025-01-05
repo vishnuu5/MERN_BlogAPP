@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+import { join } from 'path';
+
+
 export default {
-  content: [
-  
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: [join(__dirname, 'src/**/*.{html,js,jsx,ts,tsx}')],
   theme: {
     extend: {},
   },
