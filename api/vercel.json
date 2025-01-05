@@ -1,0 +1,17 @@
+{
+    "version" : 2,
+    "name" : "Blinkit",
+    "builds" : [
+        {
+            "src" : "./index.js",
+            "use" : "@vercel/node"
+        }
+    ],
+    "routes" : [
+        {
+            "src" : "/(.*)",
+            "dest" : "/",
+            "method": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+        }
+    ]
+}     
